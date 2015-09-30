@@ -23,8 +23,9 @@ def login():
         if utils.authenticate(uname,pword):
             return "You're in"
         else:
-            return render_template("login.html",error="INVALID UNAME OR PWORD")
- # return "YOU HIT POST"
+            return "invalid username or password"
+#return render_template("login.html",error="INVALID UNAME OR PWORD")
+# return "YOU HIT POST"
 
 
 

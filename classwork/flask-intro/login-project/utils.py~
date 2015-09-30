@@ -1,0 +1,5 @@
+def authenticate(uname,pword):
+    login={"hello":"goodbye"}
+    if (login[uname]==pword):
+        return True
+    return False
