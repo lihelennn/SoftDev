@@ -1,0 +1,8 @@
+from flask import Falsk, render_template, session
+
+app = Flask(__name__)
+
+@app.route("/inc")
+def inc():
+    if 'n' not in session:
+        session['n']

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<center><h1>ABOUT</h1></center>
+
+<br>
+<hr>
+<br>
+
+<center><p>Welcome to this about page that anyone can access!</p></center>
+
+<br>
+
+<center>
+<form>
+  <input type="submit" name="button" value="Go To Login Page">
+</form>
+</center>
