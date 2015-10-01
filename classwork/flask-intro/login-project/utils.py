@@ -1,5 +1,8 @@
 def authenticate(uname,pword):
-    login={"hello":"goodbye"}
+    login={"abc":"123",
+           "helen":"li",
+           "soft":"dev"
+           }
     if uname in login:
         if login[uname]==pword:
             return True

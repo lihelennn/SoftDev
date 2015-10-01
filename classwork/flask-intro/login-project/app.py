@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/usersession")
 def user():
     uname=session['username']
-    return render_template("user.html",uname)
+    return render_template("user.html",uname=uname)
 
 @app.route("/about")
 def about():
@@ -23,16 +23,14 @@ def login():
         pword = request.form['Password']
         session['username'] = uname
         if utils.authenticate(uname,pword):
-            return redirect("usersession",uname=uname)
+            return redirect("/usersession")
         else:
             return render_template("login.html",error="Invalid username or password")
         
-                                
-
-
-
+                              
 
 if __name__ == "__main__":
     app.debug = True
+    app.secret_key="hello"
     app.run(host='0.0.0.0', port=8000)
     
