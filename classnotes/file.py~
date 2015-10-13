@@ -1,0 +1,8 @@
+f=open("data.dat","w")
+f.write("HELLO WORD\n")
+f.close()
+
+f = open("data.dat","r")
+
+s=f.read()
+print s
