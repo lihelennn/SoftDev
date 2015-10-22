@@ -1,0 +1,11 @@
+import random
+from pymango import MongoClient
+
+# connection = Mongoclient('hostname')
+
+connection=MongoClient()
+# db = connection.admin
+# or connection['admin']
+# db.authenticate ('username', 'pw')
+
+db=connection['pd5']
